@@ -1,7 +1,10 @@
 # React-native Feed
 
 An experimental feed app built with react-native.
+
 ![Screenshot](screenshot.png?raw=true "Feed Screenshot")
+
+
 ## Getting Started
 
 These instructions will get you up and running.🏃
