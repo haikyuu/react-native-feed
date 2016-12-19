@@ -56,7 +56,7 @@ class StoryInput extends React.Component {
                 skipBackup: true,
                 path: 'images'
             },
-            allowsEditing: true,
+            allowsEditing: true
         };
 
         /**
@@ -94,37 +94,28 @@ class StoryInput extends React.Component {
 
                 this.setState({avatarSource: source, data: response.data});
             }
-        }, function (err) {
-          console.log("err: ", err);
+        }, function(err) {
+            console.log("err: ", err);
         });
     }
     onSubmit() {
-        this.props.submit({
-          body: this.state.textValue,
-          image: this.state.data
-        }).then(({data}) => {
+        this.props.submit({body: this.state.textValue, image: this.state.data}).then(({data}) => {
             console.log('got data', data);
             this.props.onRefreshClicked()
-            this.setState({
-              textValue: '', avatarSource: defaultAvatar, data: undefined,
-            })
+            this.setState({textValue: '', avatarSource: defaultAvatar, data: undefined})
         }).catch((error) => {
             console.log('there was an error sending the query', error);
         });
     }
-    handleTextChange(textValue){
-      this.setState({textValue})
+    handleTextChange(textValue) {
+        this.setState({textValue})
     }
     render() {
 
         return (
             <View style={[this.props.style, styles.container]}>
                 <Image source={this.state.avatarSource} style={styles.avatar}/>
-                <TextInput
-                   returnKeyType={'done'} onSubmitEditing={this.onSubmit}
-                   style={styles.textInput} placeholder={'What’s on your mind?'}
-                   placeholderTextColor={'#90a0a9'}
-                   onChangeText={this.handleTextChange.bind(this)} value={this.state.textValue}/>
+                <TextInput returnKeyType={'done'} onSubmitEditing={this.onSubmit} style={styles.textInput} placeholder={'What’s on your mind?'} placeholderTextColor={'#90a0a9'} onChangeText={this.handleTextChange.bind(this)} value={this.state.textValue}/>
 
                 <TouchableOpacity onPress={this.handleCameraAction.bind(this)} style={styles.cameraButton}>
                     <Icon name={ionicon('camera')} size={34} color={'#405979'}/>

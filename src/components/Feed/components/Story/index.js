@@ -48,7 +48,6 @@ class Story extends React.Component {
   renderBody(props){
     let imageSource
     if (props.image) {
-      // var decodedData = base64.decode(props.image);
       imageSource = {
         uri: 'data:image/jpeg;base64,' + props.image,
         // isStatic: true

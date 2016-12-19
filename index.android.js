@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 
-import {
-  Feed
-} from '@components'
+import Root from './src'
 
 import {
   AppRegistry
 } from 'react-native'
 
-AppRegistry.registerComponent('feed', () => Feed);
+AppRegistry.registerComponent('feed', () => Root);
