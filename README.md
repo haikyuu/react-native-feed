@@ -2,10 +2,9 @@
 
 An experimental feed app built with react-native.
 
-## Demo (video)
-[Here is a link to the video](https://www.facebook.com/groups/react.native.community/permalink/892224227579823/?__mref=message_bubble)
+## Screenshot
 
-[![Screenshot](screenshot.png?raw=true "Feed Screenshot")](https://www.facebook.com/groups/react.native.community/permalink/892224227579823/?__mref=message_bubble)
+![Screenshot](screenshot.png?raw=true "Feed Screenshot")
 
 ## Getting Started
 
