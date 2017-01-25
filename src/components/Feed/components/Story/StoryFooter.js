@@ -176,12 +176,12 @@ class StoryFooter extends React.Component {
           </TouchableOpacity>
           <Text style={styles.actionText}>{likesText}</Text>
         </View>
-        <View style={styles.actionContainer}>
+        {/* <View style={styles.actionContainer}>
           <TouchableOpacity style={styles.actionButton}>
             <Icon name={ionicon('chatboxes')} size={24} color={colors.text.grey} />
           </TouchableOpacity>
           <Text style={styles.actionText}>{commentsText}</Text>
-        </View>
+        </View> */}
         <View style={styles.actionContainer}>
           <TouchableOpacity style={styles.actionButton} onPress={this.share.bind(this)}>
             <Icon name={ionicon('share')} size={24} color={colors.text.grey} />
@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
     container:  {
       flex: 1, justifyContent: 'space-around', flexDirection: 'row',
       padding: 13,
-      borderTopColor: colors.border.lightgrey, borderTopWidth: 2,
+      borderTopColor: colors.border.lightgrey, borderTopWidth: .5,
     },
     actionContainer: { flexDirection: 'row', alignItems: 'center'},
     actionButton: { marginRight: 8, },

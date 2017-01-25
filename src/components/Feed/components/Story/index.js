@@ -59,8 +59,9 @@ class Story extends React.Component {
           {
             imageSource?
             <Image style={styles.postImage} source={imageSource} />
-            // null
-            :null
+            :
+            null
+            // <Image style={styles.postImage} source={require('@assets/images/prototype.jpg')} />
           }
         </View>
       )
@@ -86,8 +87,10 @@ class Story extends React.Component {
 const styles = StyleSheet.create({
     container:  {
       flex: 1,
-      borderColor: colors.border.greyblue, borderWidth: 2,
+      // borderColor: colors.border.greyblue, borderWidth: 2,
       backgroundColor: 'white',
+      borderRadius: 2.1, shadowOpacity: .1, shadowRadius: 1,
+      shadowOffset: {width:1, height: 1}
     },
     textBody: { fontSize: 15, color: colors.text.black, paddingHorizontal: 14,},
     footer: { marginHorizontal: 16, marginTop: 13, },

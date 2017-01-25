@@ -27,7 +27,7 @@ class Feed extends React.Component {
     render() {
         return (
             <ScrollView style={styles.container}>
-                <FeedHeader/>
+                {/* <FeedHeader/> */}
                 <StoryInput onRefreshClicked={this.onRefreshClicked.bind(this)}/>
                 <View style={{
                     padding: 9,

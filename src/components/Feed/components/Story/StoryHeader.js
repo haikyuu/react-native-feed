@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
   },
   avatar: {
      width: 36, height: 36,
-     marginRight: 12,
+     marginRight: 12, borderRadius: 18,
   },
   informations: { flex: 1, },
   publisher: { fontSize: 16, color: colors.text.black,  },
